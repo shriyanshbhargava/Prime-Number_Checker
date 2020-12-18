@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Are U Born In A Leap Year</title>
+    
+  </head>
+  <script>
+    function check_leapyear(){
+      var year;
+      year = document.getElementById("year").value;
+      if( (0 == year % 4) && (0 != year % 100) || (0 == year % 400) )
+      {
+        alert(year+" is a leap year");  
+      }
+      else
+      {
+        alert(year+" is not a leap year");  
+      }
+    }
+  </script>
+  
+  <body>
+    <h1 class="navbar">Are U Born In A Leap Year</h1>
+    <div class="content">
+    <input
+      id="year"
+      placeholder="Enter Your Year Of Birth !"
+    ></input><br />
+    <button id="btn-check" onclick="check_leapyear()">Check</button>
+  </div>
+
+  
+</body>
+</html>
+
